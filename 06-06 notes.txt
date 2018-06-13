@@ -1,0 +1,189 @@
+*****HTML******
+HTML 4.0 1997
+xHTML 1.1 2001
+xHTML 1.0 2000
+HTML 5.0 2013 geared toward mobile
+		CSS
+		Web Tool Kit
+HTML - lax rules. allows sloppiness
+xHtml - W3C allows you to paste in code and it will check the syntax and structure is up to standard
+
+not all tags require <open>attributes<end/>
+***comment form - <!-- --> (green in ide)
+not case sensitive
+skeleton - <! DocType html>
+	   <html> -> talks to browser
+	   <head> -> top <meta> keywords
+	   <title> -> tab
+	   <body> -> core; the meat
+
+text on a page should always be contained. put it in a box
+<p> (paragraph tag)
+
+EXAMPLE:
+<html lang="eng">
+  <head>
+    <title> out 1st/2nd example </title>
+    <meta charste = "UTF-8"/>
+  </head>
+  <body>
+    <p>
+      Hello Foo!!
+    </p>
+  </body>
+</html>
+
+h1 (largest) -> h6 (smallest)
+<em> emphasis often set in italics
+<strong> bold
+<code> monospace courier
+<blockquote> removes effect of above tags from its contents
+<sub> subscript and <sup> superscript
+ - ex: x<sub>2</sub>
+<br/> single line break, no open close, just this one
+&amp; ampersand
+&lt;
+&quot; quote
+&frac; fraction
+&deg; degrees
+&nbsp; non-breaking space (used for indention)
+copy; copyright
+
+Preserving whitespace:
+<pre>
+
+Images:
+PNG portable network graphics
+GIF
+JPEG
+
+<img/> source
+ - ex: <img src="money.jpg" alt="pictureme"/>
+	(alt does mouse over message)
+ - has pixel, %, and other attributes
+
+Links
+take you to another location whether inside or outside of current page
+<a> (anchor)
+<hrf> url
+
+Lists
+OL
+UL
+DL
+
+<DL>
+    <dt>
+        <dd>
+
+Tables
+<table>
+    CONTENT
+    rows, columns
+    <tr> table row
+    <th> table heading
+    <td> table data preformatted highlighted, bold, centerd
+</table>
+
+ ***ex: align, colspan
+<table border="1" width="80%" align="center">
+	<caption> Table of Joy + Drinks </caption>
+	<tr> (one row of headings)
+		<th colspan="3"> water </th>
+		<th rowsp> coffee </th>
+		<th> spirits </th>
+	</tr>
+  	<tr> (one row of data>
+		<td align="center">...</td>
+	</tr>
+	<tr> (second row of data)
+		<td rowspan="3">....</td>
+	</tr>
+</table>
+
+
+
+******CSS******
+cascading style sheets
+
+Doctypes:
+Html 4.0 - strictDTD, Transitional **use, Frameset
+CSS
+
+if Html is the content and meaning,
+CSS helps convey the meaning
+ - the content and design inherit components differents
+ - if you have a change in content, this will not effect the change in design
+
+1. helps to seperate the structure from the presentation
+2. provides advanced control of presentation
+3. easy maintenance of many pages
+4. faster load time
+5. better accessibility for disabled users
+6. easy
+
+CSS allows seperating websites' xHtml content from style (ie font, colors, 	background, etc)
+***contains no xhtml code. save as .css file extenion
+***link the file externally by placing one of the follwing link in the head section of each xhtml file
+	formatting ex:
+		<link rel="stylesheet"type/css href="path to 					stylesheet.css"/>		
+OR
+***import at head right after title
+	<StyleType="text/css"> @import url path to stylesheet.css </style>
+
+ 1. internal style sheet
+	- this is a method in which we can place the css code within the 		<head></head> tags of each (x)Html
+
+		<head>
+			<title>...</title>
+			<style type="text/css">
+				//css content
+			</style>
+		</head>
+		<body>...
+
+ 2. external style sheet
+	- an external css file can be created with any text or html editor
+	
+inline styles -> defined in html doc
+<p style="color:#ff0000;">some red text</p>
+ - cannot be changed from an external file or page
+ - cannot be reused
+ - slower to move between pages; no chaching
+
+SYNTAX
+Selector {property : value}
+ ex:
+	body 
+	{
+		background : #eeeeee;
+		font-family : "TrebuchetMS", Verdana, Arial, Serif;
+		/*will use next font if there is a compatability issue*/
+	}
+
+	h1 { font-family: Georgia, San-Serif; }
+	p { font-family: Tahoma, Serif; }
+	h1, h2, h3, ... h6 { 
+		color:#ffffff;
+		font-family: Tahoma, Chiller;
+	}
+
+
+comment /* */ can also be used for code that will only be used by a browser that can interpret it
+
+CSS classes:
+selector class allows you to differentiate between multiple p tags on the same page
+ ex: p 
+	{
+	font-size: small;
+	color: #009900;
+     	}
+
+properties class ...
+
+Margins and Padding
+ 
+
+
+
+
