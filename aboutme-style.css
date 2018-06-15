@@ -1,8 +1,62 @@
 
+header.w3-container
+{
+	background-color: teal;
+	border-radius: 8px;
+	border: 2px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+div.headshot
+{
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 5px;
+	background-color: teal;
+	float: left;
+}
+
+div.experience-list
+{
+	float: right;
+	margin: 5px;
+	padding: 5px;
+	align-self: center;
+	background-color: teal;
+	border-radius: 8px;
+	border: 2px solid black;
+}
+div.list-box
+{
+	float: right;
+	margin: 5px;
+	padding: 5px;
+	background-color: teal;
+	border-radius: 8px;
+	border: 2px solid black;
+}
+
+div.list
+{
+	background-color: #a8a8a8;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 5px;
+}
+
+div.list > h3
+{
+	margin: 0px;
+	font-family: cursive;
+}
+
 h1 
 {
 	font-family: Monospace;
-	text-align: Center;
+	text-align: center;
 	font-size: 40px;
 }
 
@@ -10,12 +64,15 @@ table
 {
 	border: 1;
 	border-color: black;
+	border-radius: 3px;
+	margin: 10px;
 }
 
 th
 {
 	background-color: #808080;
 	font-weight: bolder;
+	border-radius: 3px;
 }
 
 tr:nth-child(even)
@@ -30,22 +87,19 @@ tr:nth-child(odd)
 
 tr td:nth-child(1)
 {
-	padding-right: 10px;
+	padding-right: 5px;
+	border-radius: 3px;
 }
 
 tr td:nth-child(2)
 {
 	text-align: right;
+	border-radius: 3px;
 }
 
 tr:hover
 {
 	background-color: #fce205;
-}
-
-table
-{
-	margin-left:10%;
 }
 
 body
@@ -60,36 +114,14 @@ a
 	text-decoration: none;
 }
 
-a:visited
+img.headshot-image
 {
-	color: #028482;
-}
-
-img.headshot
-{
-	width:200px;
-	margin-left: 10%;
+	width:250px;
 	border-radius: 8px;
 	border: 2px solid #000000;
-	padding: 1px
 }
 
 footer
 {
-	position: fixed;
-	width: 98%;
-	margin: 20px auto;
-	bottom: 0;
-}
-
-.right-link
-{
-	position: absolute;
-	right: 5px;
-}
-
-.left-link
-{
-	position: absolute;
-	left: 5px;	
+	float: bottom;
 }

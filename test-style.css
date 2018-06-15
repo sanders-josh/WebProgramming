@@ -1,0 +1,15 @@
+table.mapgrid
+{
+	align: center;
+	width: 80%;
+	height: 500px;
+	border: 2px solid black;
+	text-align: center;
+	background: url("truck.png");
+}
+
+td
+{
+	background-color: rgba(0,255,0,0.5);
+
+}
