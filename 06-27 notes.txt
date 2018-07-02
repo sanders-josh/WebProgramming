@@ -1,0 +1,126 @@
+PHP Arrays cont...
+
+<?php
+	basic for-loop
+	for ($i=0; i<count($array); $i++)
+	{
+		print $array[$i];
+	}
+
+	//same as: foreach-loop
+	foreach ($array as $val)
+	{
+		print "{$val}<br>";
+	}
+
+	//sames as: foreach-loop as key-value pair
+	foreach ($array as $key => $val)
+	{
+		print "{$key} = {$val}<br>";
+	}
+?>
+
+Functions:
+ 1. a function is a block of code that can be executed whenever you need it
+ 2. starts with the keywork function()
+ 3. contains code in curly braces
+	ex:
+<?php
+	function WriteMyName() //declaration
+	{
+		echo "Josh";
+	}
+
+	WriteMyName(); //call
+
+	function WriteName($fname, $punctuation)
+	{
+		echo "{$fname}{$punctuation}";
+	}
+
+	WriteName("Josh","<br>");
+
+	function Add($x, $y)
+	{
+		$total = $x + $y;
+		return $total;
+	}
+
+	echo "1 + 16 = ".add(1, 16);
+	//? echo "1 + 16 = {add(1, 16)}";
+?>
+
+
+-----------------------------------------------------------------------
+<?php
+	function daysOfWeek($num)
+	{
+		$weekdays = array("M","T"...);
+		return($weekdays[$num};
+	}
+?>
+
+<p>The day of the week is <?php daysOfWeek(4) ?>.</p>
+-----------------------------------------------------------------------
+
+<form> is an html tag
+ - used to create primitive GUIs on web paes
+ - usually ask user for information
+ - information sent back to server and used
+
+the arguments inside form carrots tell what to do with user input
+ - action="url" (required)
+	specifies where to send data
+ - method="get" (default)
+	data sent as URL with ?form_data info appended to end
+	can be used only if data is all askii and <100 chars
+ - method="post"
+
+most form elements use <input> tag with a type argument:
+ - text, checkbox, radio, password, hidden...
+
+type="submit" submit button
+type="reset" reset all values
+type="button" requires javascript to specify action
+type="radio" radiobuttons (when it cannot be left blank)
+type="hidden" good way to include information user doesn't need to see
+
+drop-down:
+<select name="select">
+	<option value="red">red</option>
+	..
+	..
+	..
+</select>
+
+-----------------------------------------------------------------------
+PHP Form Handling
+$_GET
+$_POST
+
+1. html form
+<form action="Welcome.php" method="post"> // means this form will reference welcome.php
+	Name: <input type="text" name="name"/>
+	Age: <input type="text" name="age"/>
+	<input type="submit"/>
+</form>
+
+2.
+<html>
+<body>
+Welcome <?php echo "$_POST["name"];?>.<br>
+You are <?php echo "$_POST["age"];?> years old.<br>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------
+Superglobals
+built in variables that are always available in all scopes.
+$_SERVER stores data about the currently running server
+$_ENV stores data about the current client's environment
+$_GET stores data sent to the server using HTTP method GET
+$_POST stores data sent to the server using HTTP method POST
+$_COOKIE stores data contained in cookies on the client's computer
+$_SESSION used by PHP to store data pertaining to the server's session with a client
+	

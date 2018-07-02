@@ -1,0 +1,159 @@
+PHP - hypertext preprocessor
+server-side scripting
+
+Static vs Dynamic
+static website is normally html. (fixed)
+dynamic- 
+  search
+  number of visits
+  user logins
+  msg boards
+  automation
+
+3 tier web app:
+Data Tier
+  mySQL (databases)
+App Tier
+  webserver PHP
+Client Tier
+  user end
+
+Basic Syntax
+<body>
+<?php //start
+echo = "Hello";
+/*end*/ ?>
+</body>
+
+variables to store values
+strings, numbers, or arrays
+$ declaration
+<?php
+  $var_name = value;
+?>
+
+single quotes for simple string
+double quotes will enterpret variables and escape characters
+
+can insert variables directly within text of string
+<? php
+$name = "Henry";
+$age = 10;
+echo "hi, my name is $name and i am $age years old";
+?>
+
+cannot write a text string which includes double quotes without using escape 
+echo "<a href=\"url\">text</a>"
+
+variable must start with letter or _underscore
+can only contain alphanumeric characters and underscore
+
+concatenate:
+$text1="Hey you";
+$text2="1234";
+echo $text1." ".$text2
+
+op	ex	same as
+=	x=y	x=y
+
++=	x+=y	x=x+y
+-=
+
+/=	x/=y	x=x/y
+*=
+%=
+
+++	x++	x=x+1
+--
+
+logical operators
+&& and
+|| or
+== equal
+! not
+< 
+>
+
+Conditionals
+if...else
+elseif
+
+"<br/>" new line
+
+standard switch statements
+
+PHP looping:
+  while
+  do while
+  for
+  foreach
+
+foreach:
+<?php
+  $arr=array("one,"two","three");
+  foreach ($arr as $value)
+  {
+    echo "value: ".$value."</br>";
+  }
+?>
+
+******PHP arrays:
+>each element has its own ID for easy access
+>3 types:
+1. Numeric (Indexed)
+	i. stores each element with a numeric ID key
+	ii. implementations:
+
+		$names=array("peter","QQ","JJ");
+			--auto assign id keys
+
+		$names[0]="peter";
+		$names[1]="QQ";
+		$names[2]="JJ";
+			--manual assignment
+
+		echo $names[1]." and ".$names[2];
+			--access by index
+2. Associative
+	each ID key reference to a value
+		$ages=array("pete"=>32, "QQ"=>30, "JJ"=>34);
+		$ages['pete'] = "32";
+		$ages['QQ'] = "32";
+		$ages['JJ'] = "32";
+		
+		echo "pete is ".$ages['pete']." years old";
+
+3. Multidimensional
+	i. matrix - each element in an array can be an array
+
+$fam = array 
+(
+  [GG] => array 
+  (
+	[0] => pete,
+	[1] => lou,
+	[2] => meg 
+  ),
+  [QQ] => array 
+  (
+	...
+	...
+	... 
+  ),
+  [Monday] => array 
+  (
+	[0] => clive,
+	[1] => lori,
+	[2] => jr 
+  )
+);
+
+echo $fame['GG'][2]
+shows: meg
+	
+
+
+
+
+
+

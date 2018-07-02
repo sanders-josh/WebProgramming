@@ -1,0 +1,187 @@
+.f1 {
+	float: right;
+	margin: 15px;
+	margin-right: 10px;
+	height: 300px;
+	border-radius: 25px;
+}
+
+.c1 {
+	clear: both;
+}
+
+.box1 {
+	width: 85%;
+	text-align: left;
+}
+
+.i1 {
+	width: 800px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.clickable{
+	width: 925px;
+	height: 400px;
+	background: url("./images/hikingmapnopins.jpg");
+	border: 2px solid black;
+	text-align: center;
+}
+
+td
+{
+	width: 46px;
+	height: 34px;
+}
+
+.button {
+  background-color: darkgreen;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 8px 5px 8px;
+  height: 82px;
+  width: 22px;
+  border-radius: 8px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.description{
+	display: none;
+}
+
+.button:hover {
+	background-color: lightgreen;
+}
+
+
+table.menu{
+	width: 100%;
+	text-align: center;
+	border-color: black;
+}
+
+
+td.title{
+	border-bottom: 3px solid black;
+	font-size: 30px;
+	background: #e27d60;
+}
+
+ol {
+	float: left;
+}
+ol li {
+
+}
+
+ol > p{
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c38d9e;
+}
+.select {
+    background-color: #e8a87c;
+}
+
+ul.bring{
+
+}
+
+li {
+    float: left;
+}
+li.list{
+	float: none;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.select) {
+    background-color: #e8a87c;
+}
+
+
+td.Maps{
+	border-left: 2px;
+	border-right: 2px;
+}
+ol{
+	background-color: #41b3a3;
+	margin: 3%;
+}
+ol.bring{
+	background-color: transparent;
+}
+
+body{
+	width: 80%;
+	padding-left: 10%;
+	background-color: #85dcbb;
+}
+article{
+	padding-left: 5%;
+	background:#e27d60;
+	min-height: 380px;
+}
+
+section,aside{
+	background-color: #e27d60;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #c38d9e;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #e8a87c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #e8a87c;
+}
+
+div.form {
+    border-radius: 5px;
+    background-color: #e27d60;
+    padding: 20px;
+}
+
+#e27d60
+#85dcb1
+#e8a87c
+#c38d9e
+#41b3a3
