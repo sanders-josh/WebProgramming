@@ -1,0 +1,21 @@
+h1
+{
+	text-align: center;
+}
+
+.pageContainer
+{
+	width: 80%;
+	max-width: 800px;
+	margin: 7px auto;
+	padding: 25px;
+	border: 1px black solid;
+	background: white;
+	min-height: 500px;
+	border-radius: 10px;
+}
+
+.formLayout
+{
+	
+}

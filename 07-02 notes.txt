@@ -1,0 +1,45 @@
+Cookies
+ I. Client Side 
+ 	- user info
+ 	- insensitive info
+Sessions
+ II. Server Side
+	- secure
+	- keep track of returning visitors
+	- store encrypted info eg. usernames
+	- user cannot read or modify
+	- automatic time out 
+	- login authentication
+------------------------------------------------------------------
+
+Construct and Validate HTML Form with PHP
+
+make sure user input is validated and highlight/give tips for invalid responses
+
+Attributes
+ 1. <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+	
+	- htmlspecialchars() used to convert specific HTML chars to their HTML entity names
+	- ex: '>' will be converted to $gt;
+
+	- action="" defines where the form contents are sent when form is submitted
+	- in this case: the value of $_SERVER["PHP_SELF"]
+	- $_SERVER is an array filled in at run time after submit; PHP_SELF specifies the file name to send the array to
+
+------------------------------------------------------------------------
+
+Form Processing
+- to determine whether the form has been submitted by the user, validate everything on the user side after submit button is pressed before sending it to the server
+	1. add a piece of code to pick up the form data and allow us to check it and create error messages where needed
+	2. at the start o the script before any html => perform the check whether the form has been sent using $_SERVER["REQUEST_METHOD"]
+		- if the request_method is $_POST, then the script has been submitted
+		- detecting a form submission is trickier when using GET because just requesting the page to view the form will probably happen as a GET request;
+			*common workaround is to  provide a name attribute to the submit button and check whether it is in the $_GET array with isSet()
+
+<input type="submit" name="submit" value="submit">
+<? php
+	if (isSet($_GET["submit"]))
+	{
+		//process form
+	}
+?>
